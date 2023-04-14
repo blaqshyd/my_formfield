@@ -1,39 +1,88 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+<h2>CustomFormField</h2>
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package provides a customizable and detailed TextFormField widget for creating complex forms in Flutter, with built-in validation and error handling.
 
 ## Features
+Customizable input decoration
+Built-in validation and error handling
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Installation
+Add the following to your pubspec.yaml file:
 
-## Getting started
+```yaml
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+dependencies:
+  custom_form_field: ^1.0.0
+
+```
+Then, run flutter pub get in your terminal.
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use CustomFormField, import the package and create an instance of the widget, specifying the desired properties:
 
 ```dart
-const like = 'sample';
+
+import 'package:custom_form_field/custom_form_field.dart';
+
+class Example extends StatelessWidget {
+  const Example({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Custom FormField'),
+      ),
+      body: Center(
+        child: Column(
+          children: const [
+            CustomFormField(
+              inputLabel: 'Full name',
+              inputHint: 'Enter full name',
+            ),
+            CustomFormField(
+              inputLabel: 'Email',
+              inputHint: 'Enter email address',
+            ),
+            CustomFormField(
+              inputLabel: 'Password',
+              inputHint: 'Enter password',
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 ```
+## Properties
+
+The following properties are available for customization:
+
+controller: A TextEditingController for controlling the text field's text value.
+validator: A function for validating the text input.
+border, focusedBorder, enabledBorder, errorBorder, disabledBorder: Input border decorations for the text field.
+suffixIcon, prefixIcon: Icon widgets to be displayed at the end or beginning of the text field.
+contentPadding: Padding for the text field's content.
+inputLabelStyle, inputHintStyle, inputTextStyle: Styles for the text field's label, hint, and text.
+inputKeyboardType: The keyboard type for the text field.
+autocorrect: Whether autocorrection should be enabled.
+obscureText: Whether the text field should obscure the entered text.
+inputSuggestions: Whether input suggestions should be enabled.
+inputAction: The type of action button to display on the keyboard.
+inputFilled: Whether the input field should be filled with color.
+inputFillColor: The fill color for the input field.
+inputLabel: The label for the input field.
+inputHint: The hint for the input field.
+onChanged: A function called when the text input changes.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Additional information
+For more information about this package, including how to contribute, file issues, or contact the package authors, see the package repository on GitHub: custom_formfield.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+
+
+
