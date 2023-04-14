@@ -1,4 +1,4 @@
-import 'package:custom_formfield/custom_formfield.dart';
+import 'package:my_formfield/my_formfield.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,20 +23,20 @@ class Example extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Custom FormField'),
+        title: const Text('My FormField'),
       ),
       body: Center(
         child: Column(
           children: const [
-            CustomFormField(
+            MyFormField(
               inputLabel: 'Full name',
               inputHint: 'Enter full name',
             ),
-            CustomFormField(
+            MyFormField(
               inputLabel: 'Email',
               inputHint: 'Enter email address',
             ),
-            CustomFormField(
+            MyFormField(
               inputLabel: 'Password',
               inputHint: 'Enter password',
             ),

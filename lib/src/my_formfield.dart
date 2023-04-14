@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomFormField extends StatelessWidget {
+class MyFormField extends StatelessWidget {
   final bool? autocorrect;
   final bool? inputFilled;
   final bool? obscureText;
@@ -21,7 +21,7 @@ class CustomFormField extends StatelessWidget {
   final String? Function(String?)? validator;
   final Function(String)? onChanged;
 
-  const CustomFormField({
+  const MyFormField({
     super.key,
     this.controller,
     this.validator,

@@ -1,10 +1,10 @@
 
-<h2>CustomFormField</h2>
+<h2>MyFormField</h2>
 
-This package provides a customizable and detailed TextFormField widget for creating complex forms in Flutter, with built-in validation and error handling.
+This package provides a myizable and detailed TextFormField widget for creating complex forms in Flutter, with built-in validation and error handling.
 
 ## Features
-Customizable input decoration
+myizable input decoration
 Built-in validation and error handling
 
 ## Installation
@@ -13,17 +13,17 @@ Add the following to your pubspec.yaml file:
 ```yaml
 
 dependencies:
-  custom_form_field: ^1.0.0
+  my_formfield: ^0.0.1
 
 ```
 Then, run flutter pub get in your terminal.
 
 ## Usage
-To use CustomFormField, import the package and create an instance of the widget, specifying the desired properties:
+To use myFormField, import the package and create an instance of the widget, specifying the desired properties:
 
 ```dart
 
-import 'package:custom_form_field/custom_form_field.dart';
+import 'package:my_formfield/my_formfield.dart';
 
 class Example extends StatelessWidget {
   const Example({Key? key}) : super(key: key);
@@ -32,20 +32,20 @@ class Example extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Custom FormField'),
+        title: const Text('My FormField'),
       ),
       body: Center(
         child: Column(
           children: const [
-            CustomFormField(
+            MyFormField(
               inputLabel: 'Full name',
               inputHint: 'Enter full name',
             ),
-            CustomFormField(
+            MyFormField(
               inputLabel: 'Email',
               inputHint: 'Enter email address',
             ),
-            CustomFormField(
+            MyFormField(
               inputLabel: 'Password',
               inputHint: 'Enter password',
             ),
@@ -58,7 +58,7 @@ class Example extends StatelessWidget {
 ```
 ## Properties
 
-The following properties are available for customization:
+The following properties are available for myization:
 
 controller: A TextEditingController for controlling the text field's text value.
 validator: A function for validating the text input.
@@ -80,7 +80,7 @@ onChanged: A function called when the text input changes.
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Additional information
-For more information about this package, including how to contribute, file issues, or contact the package authors, see the package repository on GitHub: custom_formfield.
+For more information about this package, including how to contribute, file issues, or contact the package authors, see the package repository on GitHub: my_formfield.
 
 
 
