@@ -26,21 +26,37 @@ class Example extends StatelessWidget {
         title: const Text('My FormField'),
       ),
       body: Center(
-        child: Column(
-          children: const [
-            MyFormField(
-              inputLabel: 'Full name',
-              inputHint: 'Enter full name',
-            ),
-            MyFormField(
-              inputLabel: 'Email',
-              inputHint: 'Enter email address',
-            ),
-            MyFormField(
-              inputLabel: 'Password',
-              inputHint: 'Enter password',
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              MyFormField(
+                inputLabel: 'Full name',
+                inputHint: 'Enter full name',
+                prefixIcon: const Icon(Icons.person_outline),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+              const SizedBox(height: 20),
+              MyFormField(
+                inputLabel: 'Email',
+                inputHint: 'Enter email address',
+                prefixIcon: const Icon(Icons.alternate_email),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+              const SizedBox(height: 20),
+              MyFormField(
+                inputLabel: 'Password',
+                inputHint: 'Enter password',
+                obscureText: true,
+                prefixIcon: const Icon(Icons.lock_outline),
+                suffixIcon: const Icon(Icons.visibility),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+            ],
+          ),
         ),
       ),
     );

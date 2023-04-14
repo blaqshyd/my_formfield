@@ -1,6 +1,6 @@
-custom_formfield
+my_formfield
 
-A partial implementation of Bootstrap Grid system in Flutter for Responsive Layout.
+A customizable widget for easier and better implementation for the textformfield.
 
 Written by Ayodele Daniel (https://github.com/blaqshyd).
 

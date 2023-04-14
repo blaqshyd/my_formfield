@@ -11,7 +11,7 @@ class MyFormField extends StatelessWidget {
       errorBorder,
       disabledBorder;
   final Color? inputFillColor;
-  final IconButton? prefixIcon, suffixIcon;
+  final Widget? prefixIcon, suffixIcon;
   final EdgeInsetsGeometry? contentPadding;
   final TextEditingController? controller;
   final TextInputType? inputKeyboardType;
