@@ -5,11 +5,13 @@ class MyFormField extends StatelessWidget {
   final bool? inputFilled;
   final bool? obscureText;
   final bool? inputSuggestions;
+  final bool? readOnly;
   final InputBorder? border,
       focusedBorder,
       enabledBorder,
       errorBorder,
       disabledBorder;
+  final int? maxLines, minLines, maxLength;
   final Color? inputFillColor;
   final Widget? prefixIcon, suffixIcon;
   final EdgeInsetsGeometry? contentPadding;
@@ -17,7 +19,8 @@ class MyFormField extends StatelessWidget {
   final TextInputType? inputKeyboardType;
   final TextInputAction? inputAction;
   final TextStyle? inputLabelStyle, inputHintStyle, inputTextStyle;
-  final String? inputLabel, inputHint;
+  final String? inputLabel, inputHint, initialValue;
+  final TextCapitalization? inputCapitalization;
   final String? Function(String?)? validator;
   final Function(String)? onChanged;
 
@@ -46,11 +49,22 @@ class MyFormField extends StatelessWidget {
     this.inputLabel,
     this.inputHint,
     this.onChanged,
+    this.maxLines,
+    this.minLines,
+    this.maxLength,
+    this.readOnly,
+    this.initialValue,
+    this.inputCapitalization,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      initialValue: initialValue,
+      readOnly: readOnly ?? false,
+      maxLength: maxLength,
+      maxLines: maxLines,
+      minLines: minLines,
       onChanged: onChanged,
       controller: controller,
       validator: validator,
@@ -59,6 +73,7 @@ class MyFormField extends StatelessWidget {
       enableSuggestions: inputSuggestions ?? false,
       keyboardType: inputKeyboardType,
       textInputAction: inputAction,
+      textCapitalization: inputCapitalization ?? TextCapitalization.none,
       style: inputTextStyle,
       decoration: InputDecoration(
         labelText: inputLabel,

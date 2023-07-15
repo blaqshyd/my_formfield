@@ -13,7 +13,7 @@ Add the following to your pubspec.yaml file:
 ```yaml
 
 dependencies:
-  my_formfield: ^0.0.3
+  my_formfield: ^0.0.4
 
 ```
 Then, run flutter pub get in your terminal.
@@ -76,7 +76,7 @@ class Example extends StatelessWidget {
 ```
 ## Properties
 
-The following properties are available for myization:
+The following properties are available for customization:
 
 <b>controller:</b> A TextEditingController for controlling the text field's text value. <br>
 <b>validator:</b> A function for validating the text input. <br>
@@ -94,6 +94,9 @@ border, focusedBorder, enabledBorder, errorBorder, disabledBorder: Input border 
 <b>inputLabel:</b> The label for the input field.<br>
 <b>inputHint:</b> The hint for the input field.<br>
 <b>onChanged:</b> A function called when the text input changes.<br>
+<b>minLines:</b> The minimum number of lines to occupy when the content spans fewer lines..<br>
+<b>maxLines:</b> TThe maximum number of lines to show at one time, wrapping if necessary.<br>
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/blaqshyd/my_formfield/blob/main/LICENSE) file for details.

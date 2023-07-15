@@ -1,6 +1,6 @@
 name: my_formfield
-description: A customizable widget for easier and better implementation for the textformfield.
-version: 0.0.3
+description: A customizable widget for easier and better implementation of the textformfield.
+version: 0.0.4
 homepage: https://github.com/blaqshyd/my_formfield
 repository: https://github.com/blaqshyd/my_formfield
 
