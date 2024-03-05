@@ -1,11 +1,11 @@
 name: my_formfield
 description: A customizable widget for easier and better implementation of the textformfield.
-version: 0.0.6
+version: 0.0.8
 homepage: https://github.com/blaqshyd/my_formfield
 repository: https://github.com/blaqshyd/my_formfield
 
 environment:
-  sdk: '>=2.18.5 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.3
 
 flutter:
 
